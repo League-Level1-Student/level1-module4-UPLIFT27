@@ -102,7 +102,7 @@ public class Jeopardy implements ActionListener {
 		thirdButton.addActionListener(this);
 		fourthButton.addActionListener(this);
 		fifthButton.addActionListener(this);
-		firstButton.addActionListener(this);
+		sixthButton.addActionListener(this);
 		
 
 		// 12. Write the code to complete the actionPerformed() method below
@@ -151,11 +151,11 @@ public class Jeopardy implements ActionListener {
 		
 		
 		if (e.getSource() == firstButton) {
-			askQuestion("What number is Lebron", "Lakers", 200);
+			askQuestion("What team is Lebron on", "Lakers", 200);
 		}
 		
 		if (e.getSource() == secondButton) {
-			askQuestion("What number is Lebron", "23");
+			askQuestion("What number is Lebron", "23", 300);
 		}
 
 		// Complete the code in the askQuestion() method. When you play the game, the
@@ -172,10 +172,10 @@ public class Jeopardy implements ActionListener {
 			askQuestion("What month is Lebron born in", "December", 600);
 		}
 		if (e.getSource() == fifthButton) {
-			askQuestion("Where was LeBron Born", "Akron", 800(;
+			askQuestion("Where was LeBron Born", "Akron", 800);
 		}
-		if (e.getSource() == fifthButton) {
-			askQuestion("Where was LeBron Born", "Akron", 800(;
+		if (e.getSource() == sixthButton) {
+			askQuestion("What is LeBron's first sons first name", "LeBron", 1000);
 		}
 		
 
@@ -198,7 +198,7 @@ public class Jeopardy implements ActionListener {
 
 		// Remove this temporary message and replace it with a pop-up that asks the user
 		// the question
-		String ans = JOptionPane.showInputDialog(null, "How old is LeBron James");
+		String ans = JOptionPane.showInputDialog(null, question);
 
 		// Stop the theme music when they have entered their response.
 
