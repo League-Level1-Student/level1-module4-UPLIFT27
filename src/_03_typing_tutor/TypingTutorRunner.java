@@ -4,7 +4,7 @@ public class TypingTutorRunner {
 
 	
 	public static void main(String[] args){
-		typingTutor tutor = new typingTutor();
+		TypingTutor tutor = new TypingTutor();
 		tutor.setup(); 
 	}
 	
