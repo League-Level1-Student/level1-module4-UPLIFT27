@@ -25,7 +25,15 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
         
         // 2. Adjust the frameWidth and frameHeight variables to fit your image nicely (doesn’t need a new line of code)
         
+        
+        
+        
         // 3. Complete the begin() method in the FortuneTellerRunner class
+        
+        begin()
+        {
+        	
+        }
         
         // 4. add a mouse listener to the frame
         
@@ -38,7 +46,13 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
         
         // 5. Print the mouseX variable
         
+        System.out.print(mouseX);
+        
+        
         // 6. Add the mouseY variable to the previous line so that it prints out too (no new line)
+        
+        System.out.print(mouseY);
+        
         
         // 7. Adjust your secret location co-ordinates here:
         int secretLocationX = 0;
@@ -51,6 +65,8 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
             
             // 9. Play the sound
             
+        	play("creepy-noise.wav");
+        	
             // 10. Insert your completed Magic 8 ball code here
             
         }
